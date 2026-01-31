@@ -1,0 +1,4 @@
+E:\MAUI\.NetMAUI\MAUIApp\bin\Release\net10.0-android\publish\com.companyname.mymauiapp-Signed.aab
+E:\MAUI\.NetMAUI\MAUIApp\bin\Release\net10.0-android\publish\com.companyname.mymauiapp.aab
+E:\MAUI\.NetMAUI\MAUIApp\bin\Release\net10.0-android\publish\com.companyname.mymauiapp-Signed.apk
+E:\MAUI\.NetMAUI\MAUIApp\bin\Release\net10.0-android\publish\_Microsoft.Android.Resource.Designer.dll

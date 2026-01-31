@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFrameworks>net10.0-android;net10.0-ios;net10.0-maccatalyst</TargetFrameworks>
@@ -23,6 +23,7 @@
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.mymauiapp</ApplicationId>
+		
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
@@ -38,6 +39,23 @@
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 	</PropertyGroup>
 
+	<!-- ANDROID RELEASE SIGNING -->
+	<PropertyGroup Condition="$(TargetFramework.Contains('-android')) and '$(Configuration)' == 'Release'">
+		<RuntimeIdentifiers>android-arm64</RuntimeIdentifiers>
+		<AndroidKeyStore>true</AndroidKeyStore>
+		<AndroidSigningKeyStore>carlist-app-keystore</AndroidSigningKeyStore>
+		<AndroidSigningStorePass>car1234</AndroidSigningStorePass>
+		<AndroidSigningKeyAlias>key</AndroidSigningKeyAlias>
+		<AndroidSigningKeyPass>car1234</AndroidSigningKeyPass>
+	</PropertyGroup>
+
+	<!-- iOS RELEASE SETTINGS -->
+	<!--<PropertyGroup Condition="$(TargetFramework.Contains('-ios')) and '$(Configuration)' == 'Release'">
+		<CodesignKey>Apple Distribution</CodesignKey>
+		<CodesignProvision>My App AppStore</CodesignProvision>
+	</PropertyGroup>-->
+	
+	
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
@@ -69,6 +87,10 @@
 
 
 	</ItemGroup>
+	<ItemGroup>
+		<AndroidNativeLibrary Remove="**/libe_sqlite3.so" />
+	</ItemGroup>
+
 
 	<ItemGroup>
 	  <AndroidResource Update="Platforms\Android\Resources\xml\network_security_config.xml">

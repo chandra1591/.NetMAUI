@@ -724,6 +724,9 @@ java.lang.AutoCloseable;java.lang.AutoCloseable
 Java.Lang.ICharSequence, Mono.Android;java.lang.CharSequence
 Java.Lang.ICharSequence;java.lang.CharSequence
 java.lang.CharSequence;java.lang.CharSequence
+Java.Lang.ICloneable, Mono.Android;java.lang.Cloneable
+Java.Lang.ICloneable;java.lang.Cloneable
+java.lang.Cloneable;java.lang.Cloneable
 Java.Lang.IIterable, Mono.Android;java.lang.Iterable
 Java.Lang.IIterable;java.lang.Iterable
 java.lang.Iterable;java.lang.Iterable
@@ -799,6 +802,9 @@ java.util.List;java.util.List
 Java.Util.IListIterator, Mono.Android;java.util.ListIterator
 Java.Util.IListIterator;java.util.ListIterator
 java.util.ListIterator;java.util.ListIterator
+Java.Util.IRandomAccess, Mono.Android;java.util.RandomAccess
+Java.Util.IRandomAccess;java.util.RandomAccess
+java.util.RandomAccess;java.util.RandomAccess
 Java.Util.ISequencedCollection, Mono.Android;java.util.SequencedCollection
 Java.Util.ISequencedCollection;java.util.SequencedCollection
 java.util.SequencedCollection;java.util.SequencedCollection
@@ -1465,6 +1471,42 @@ mymauiapp.MainApplication;crc64d05620f81d52cd66.MainApplication
 Org.XmlPull.V1.IXmlPullParser, Mono.Android;org.xmlpull.v1.XmlPullParser
 Org.XmlPull.V1.IXmlPullParser;org.xmlpull.v1.XmlPullParser
 org.xmlpull.v1.XmlPullParser;org.xmlpull.v1.XmlPullParser
+Xamarin.Google.Crypto.Tink.Shaded.Protobuf.IMessageLite, Xamarin.Google.Crypto.Tink.Android;com.google.crypto.tink.shaded.protobuf.MessageLite
+Xamarin.Google.Crypto.Tink.Shaded.Protobuf.IMessageLite;com.google.crypto.tink.shaded.protobuf.MessageLite
+com.google.crypto.tink.shaded.protobuf.MessageLite;com.google.crypto.tink.shaded.protobuf.MessageLite
+Xamarin.Google.Crypto.Tink.Shaded.Protobuf.IMessageLiteBuilder, Xamarin.Google.Crypto.Tink.Android;com.google.crypto.tink.shaded.protobuf.MessageLite$Builder
+Xamarin.Google.Crypto.Tink.Shaded.Protobuf.IMessageLiteBuilder;com.google.crypto.tink.shaded.protobuf.MessageLite$Builder
+com.google.crypto.tink.shaded.protobuf.MessageLite$Builder;com.google.crypto.tink.shaded.protobuf.MessageLite$Builder
+Xamarin.Google.Crypto.Tink.Shaded.Protobuf.IMessageLiteOrBuilder, Xamarin.Google.Crypto.Tink.Android;com.google.crypto.tink.shaded.protobuf.MessageLiteOrBuilder
+Xamarin.Google.Crypto.Tink.Shaded.Protobuf.IMessageLiteOrBuilder;com.google.crypto.tink.shaded.protobuf.MessageLiteOrBuilder
+com.google.crypto.tink.shaded.protobuf.MessageLiteOrBuilder;com.google.crypto.tink.shaded.protobuf.MessageLiteOrBuilder
+Xamarin.Google.Crypto.Tink.Shaded.Protobuf.Internal+IBooleanList, Xamarin.Google.Crypto.Tink.Android;com.google.crypto.tink.shaded.protobuf.Internal$BooleanList
+Xamarin.Google.Crypto.Tink.Shaded.Protobuf.Internal.IBooleanList;com.google.crypto.tink.shaded.protobuf.Internal$BooleanList
+com.google.crypto.tink.shaded.protobuf.Internal$BooleanList;com.google.crypto.tink.shaded.protobuf.Internal$BooleanList
+Xamarin.Google.Crypto.Tink.Shaded.Protobuf.Internal+IDoubleList, Xamarin.Google.Crypto.Tink.Android;com.google.crypto.tink.shaded.protobuf.Internal$DoubleList
+Xamarin.Google.Crypto.Tink.Shaded.Protobuf.Internal.IDoubleList;com.google.crypto.tink.shaded.protobuf.Internal$DoubleList
+com.google.crypto.tink.shaded.protobuf.Internal$DoubleList;com.google.crypto.tink.shaded.protobuf.Internal$DoubleList
+Xamarin.Google.Crypto.Tink.Shaded.Protobuf.Internal+IEnumLite, Xamarin.Google.Crypto.Tink.Android;com.google.crypto.tink.shaded.protobuf.Internal$EnumLite
+Xamarin.Google.Crypto.Tink.Shaded.Protobuf.Internal.IEnumLite;com.google.crypto.tink.shaded.protobuf.Internal$EnumLite
+com.google.crypto.tink.shaded.protobuf.Internal$EnumLite;com.google.crypto.tink.shaded.protobuf.Internal$EnumLite
+Xamarin.Google.Crypto.Tink.Shaded.Protobuf.Internal+IEnumLiteMap, Xamarin.Google.Crypto.Tink.Android;com.google.crypto.tink.shaded.protobuf.Internal$EnumLiteMap
+Xamarin.Google.Crypto.Tink.Shaded.Protobuf.Internal.IEnumLiteMap;com.google.crypto.tink.shaded.protobuf.Internal$EnumLiteMap
+com.google.crypto.tink.shaded.protobuf.Internal$EnumLiteMap;com.google.crypto.tink.shaded.protobuf.Internal$EnumLiteMap
+Xamarin.Google.Crypto.Tink.Shaded.Protobuf.Internal+IFloatList, Xamarin.Google.Crypto.Tink.Android;com.google.crypto.tink.shaded.protobuf.Internal$FloatList
+Xamarin.Google.Crypto.Tink.Shaded.Protobuf.Internal.IFloatList;com.google.crypto.tink.shaded.protobuf.Internal$FloatList
+com.google.crypto.tink.shaded.protobuf.Internal$FloatList;com.google.crypto.tink.shaded.protobuf.Internal$FloatList
+Xamarin.Google.Crypto.Tink.Shaded.Protobuf.Internal+IIntList, Xamarin.Google.Crypto.Tink.Android;com.google.crypto.tink.shaded.protobuf.Internal$IntList
+Xamarin.Google.Crypto.Tink.Shaded.Protobuf.Internal.IIntList;com.google.crypto.tink.shaded.protobuf.Internal$IntList
+com.google.crypto.tink.shaded.protobuf.Internal$IntList;com.google.crypto.tink.shaded.protobuf.Internal$IntList
+Xamarin.Google.Crypto.Tink.Shaded.Protobuf.Internal+ILongList, Xamarin.Google.Crypto.Tink.Android;com.google.crypto.tink.shaded.protobuf.Internal$LongList
+Xamarin.Google.Crypto.Tink.Shaded.Protobuf.Internal.ILongList;com.google.crypto.tink.shaded.protobuf.Internal$LongList
+com.google.crypto.tink.shaded.protobuf.Internal$LongList;com.google.crypto.tink.shaded.protobuf.Internal$LongList
+Xamarin.Google.Crypto.Tink.Shaded.Protobuf.Internal+IProtobufList, Xamarin.Google.Crypto.Tink.Android;com.google.crypto.tink.shaded.protobuf.Internal$ProtobufList
+Xamarin.Google.Crypto.Tink.Shaded.Protobuf.Internal.IProtobufList;com.google.crypto.tink.shaded.protobuf.Internal$ProtobufList
+com.google.crypto.tink.shaded.protobuf.Internal$ProtobufList;com.google.crypto.tink.shaded.protobuf.Internal$ProtobufList
+Xamarin.Google.Crypto.Tink.Shaded.Protobuf.IParser, Xamarin.Google.Crypto.Tink.Android;com.google.crypto.tink.shaded.protobuf.Parser
+Xamarin.Google.Crypto.Tink.Shaded.Protobuf.IParser;com.google.crypto.tink.shaded.protobuf.Parser
+com.google.crypto.tink.shaded.protobuf.Parser;com.google.crypto.tink.shaded.protobuf.Parser
 Xamarin.KotlinX.Coroutines.Flow.IFlow, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.flow.Flow
 Xamarin.KotlinX.Coroutines.Flow.IFlow;kotlinx.coroutines.flow.Flow
 kotlinx.coroutines.flow.Flow;kotlinx.coroutines.flow.Flow

@@ -8,11 +8,11 @@
       },
       {
         "name": "Microsoft.MacCatalyst",
-        "version": "26.2.10191"
+        "version": "26.1.10502"
       },
       {
         "name": "Microsoft.MacCatalyst.Runtimes",
-        "version": "26.2.10191"
+        "version": "26.1.10502"
       }
     ],
     "configProperties": {

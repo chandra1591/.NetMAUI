@@ -5512,7 +5512,7 @@
         }
       }
     },
-    "net10.0-android36.0/android-x64": {
+    "net10.0-android36.0/ios-arm64": {
       "CommunityToolkit.Mvvm/8.4.0": {
         "type": "package",
         "compile": {
@@ -6105,7 +6105,7 @@
           "lib/netstandard2.0/_._": {}
         },
         "native": {
-          "runtimes/android-x64/native/libe_sqlite3.so": {}
+          "runtimes/ios-arm64/native/e_sqlite3.a": {}
         },
         "build": {
           "buildTransitive/net9.0/SourceGear.sqlite3.targets": {}
@@ -8206,7 +8206,7 @@
         }
       }
     },
-    "net10.0-android36.0/iossimulator-x64": {
+    "net10.0-android36.0/maccatalyst-arm64": {
       "CommunityToolkit.Mvvm/8.4.0": {
         "type": "package",
         "compile": {
@@ -8799,7 +8799,7 @@
           "lib/netstandard2.0/_._": {}
         },
         "native": {
-          "runtimes/iossimulator-x64/native/e_sqlite3.a": {}
+          "runtimes/maccatalyst-arm64/native/libe_sqlite3.dylib": {}
         },
         "build": {
           "buildTransitive/net9.0/SourceGear.sqlite3.targets": {}
@@ -17765,7 +17765,7 @@
         }
       }
     },
-    "net10.0-ios26.1/android-x64": {
+    "net10.0-ios26.1/ios-arm64": {
       "CommunityToolkit.Mvvm/8.4.0": {
         "type": "package",
         "compile": {
@@ -18329,7 +18329,7 @@
           "lib/netstandard2.0/_._": {}
         },
         "native": {
-          "runtimes/android-x64/native/libe_sqlite3.so": {}
+          "runtimes/ios-arm64/native/e_sqlite3.a": {}
         },
         "build": {
           "buildTransitive/net9.0/SourceGear.sqlite3.targets": {}
@@ -18442,7 +18442,7 @@
         }
       }
     },
-    "net10.0-ios26.1/iossimulator-x64": {
+    "net10.0-ios26.1/maccatalyst-arm64": {
       "CommunityToolkit.Mvvm/8.4.0": {
         "type": "package",
         "compile": {
@@ -19006,7 +19006,7 @@
           "lib/netstandard2.0/_._": {}
         },
         "native": {
-          "runtimes/iossimulator-x64/native/e_sqlite3.a": {}
+          "runtimes/maccatalyst-arm64/native/libe_sqlite3.dylib": {}
         },
         "build": {
           "buildTransitive/net9.0/SourceGear.sqlite3.targets": {}
@@ -22027,7 +22027,7 @@
         }
       }
     },
-    "net10.0-maccatalyst26.1/android-x64": {
+    "net10.0-maccatalyst26.1/ios-arm64": {
       "CommunityToolkit.Mvvm/8.4.0": {
         "type": "package",
         "compile": {
@@ -22591,7 +22591,7 @@
           "lib/netstandard2.0/_._": {}
         },
         "native": {
-          "runtimes/android-x64/native/libe_sqlite3.so": {}
+          "runtimes/ios-arm64/native/e_sqlite3.a": {}
         },
         "build": {
           "buildTransitive/net9.0/SourceGear.sqlite3.targets": {}
@@ -22661,9 +22661,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/_._": {}
-        },
-        "native": {
-          "runtimes/linux-x64/native/libe_sqlite3.so": {}
         },
         "build": {
           "buildTransitive/net7.0/SQLitePCLRaw.lib.e_sqlite3.targets": {}
@@ -22699,7 +22696,7 @@
         }
       }
     },
-    "net10.0-maccatalyst26.1/iossimulator-x64": {
+    "net10.0-maccatalyst26.1/maccatalyst-arm64": {
       "CommunityToolkit.Mvvm/8.4.0": {
         "type": "package",
         "compile": {
@@ -23263,7 +23260,7 @@
           "lib/netstandard2.0/_._": {}
         },
         "native": {
-          "runtimes/iossimulator-x64/native/e_sqlite3.a": {}
+          "runtimes/maccatalyst-arm64/native/libe_sqlite3.dylib": {}
         },
         "build": {
           "buildTransitive/net9.0/SourceGear.sqlite3.targets": {}
@@ -23333,6 +23330,9 @@
         },
         "runtime": {
           "lib/netstandard2.0/_._": {}
+        },
+        "native": {
+          "runtimes/maccatalyst-arm64/native/libe_sqlite3.dylib": {}
         },
         "build": {
           "buildTransitive/net7.0/SQLitePCLRaw.lib.e_sqlite3.targets": {}
@@ -26706,7 +26706,7 @@
         }
       }
     },
-    "net10.0-windows10.0.19041/android-x64": {
+    "net10.0-windows10.0.19041/ios-arm64": {
       "CommunityToolkit.Mvvm/8.4.0": {
         "type": "package",
         "compile": {
@@ -27459,7 +27459,7 @@
           "lib/netstandard2.0/_._": {}
         },
         "native": {
-          "runtimes/android-x64/native/libe_sqlite3.so": {}
+          "runtimes/ios-arm64/native/e_sqlite3.a": {}
         },
         "build": {
           "buildTransitive/net9.0/SourceGear.sqlite3.targets": {}
@@ -27529,9 +27529,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/_._": {}
-        },
-        "native": {
-          "runtimes/linux-x64/native/libe_sqlite3.so": {}
         },
         "build": {
           "buildTransitive/net7.0/SQLitePCLRaw.lib.e_sqlite3.targets": {}
@@ -27567,7 +27564,7 @@
         }
       }
     },
-    "net10.0-windows10.0.19041/iossimulator-x64": {
+    "net10.0-windows10.0.19041/maccatalyst-arm64": {
       "CommunityToolkit.Mvvm/8.4.0": {
         "type": "package",
         "compile": {
@@ -28320,7 +28317,7 @@
           "lib/netstandard2.0/_._": {}
         },
         "native": {
-          "runtimes/iossimulator-x64/native/e_sqlite3.a": {}
+          "runtimes/maccatalyst-arm64/native/libe_sqlite3.dylib": {}
         },
         "build": {
           "buildTransitive/net9.0/SourceGear.sqlite3.targets": {}
@@ -28390,6 +28387,9 @@
         },
         "runtime": {
           "lib/netstandard2.0/_._": {}
+        },
+        "native": {
+          "runtimes/maccatalyst-arm64/native/libe_sqlite3.dylib": {}
         },
         "build": {
           "buildTransitive/net7.0/SQLitePCLRaw.lib.e_sqlite3.targets": {}
@@ -30914,39 +30914,141 @@
         "lib/net10.0-android36.0/Microsoft.Maui.Controls.pdb",
         "lib/net10.0-android36.0/Microsoft.Maui.Controls.xml",
         "lib/net10.0-android36.0/ar/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/ar/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/ar/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/ar/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/ca/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/ca/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/ca/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/ca/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/cs/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/cs/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/cs/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/cs/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/da/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/da/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/da/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/da/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/de/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/de/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/de/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/de/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/el/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/el/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/el/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/el/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/es/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/es/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/es/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/es/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/fi/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/fi/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/fi/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/fi/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/fr/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/fr/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/fr/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/fr/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/he/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/he/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/he/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/he/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/hi/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/hi/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/hi/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/hi/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/hr/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/hr/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/hr/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/hr/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/hu/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/hu/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/hu/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/hu/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/id/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/id/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/id/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/id/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/it/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/it/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/it/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/it/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/ja/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/ja/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/ja/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/ja/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/ko/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/ko/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/ko/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/ko/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/ms/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/ms/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/ms/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/ms/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/nb/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/nb/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/nb/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/nb/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/nl/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/nl/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/nl/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/nl/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/pl/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/pl/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/pl/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/pl/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/pt-BR/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/pt-BR/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/pt-BR/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/pt-BR/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/pt/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/pt/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/pt/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/pt/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/ro/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/ro/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/ro/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/ro/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/ru/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/ru/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/ru/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/ru/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/sk/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/sk/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/sk/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/sk/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/sv/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/sv/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/sv/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/sv/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/th/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/th/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/th/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/th/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/tr/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/tr/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/tr/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/tr/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/uk/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/uk/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/uk/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/uk/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/vi/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/vi/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/vi/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/vi/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/zh-HK/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/zh-HK/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/zh-HK/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/zh-HK/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/zh-Hans/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/zh-Hans/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/zh-Hans/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/zh-Hans/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-android36.0/zh-Hant/Microsoft.Maui.Controls.resources.dll",
+        "lib/net10.0-android36.0/zh-Hant/Microsoft.Maui.Controls.resources.jlo.xml",
+        "lib/net10.0-android36.0/zh-Hant/Microsoft.Maui.Controls.resources.typemap.xml",
+        "lib/net10.0-android36.0/zh-Hant/shrunk/Microsoft.Maui.Controls.resources.dll",
         "lib/net10.0-ios26.0/Design/Microsoft.Maui.Controls.DesignTools.dll",
         "lib/net10.0-ios26.0/Design/Microsoft.Maui.Controls.DesignTools.pdb",
         "lib/net10.0-ios26.0/Microsoft.Maui.Controls.dll",
@@ -36248,8 +36350,24 @@
         "warn": true,
         "downloadDependencies": [
           {
+            "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+            "version": "[10.0.2, 10.0.2]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Crossgen2.win-x64",
+            "version": "[10.0.2, 10.0.2]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.win-x64",
+            "version": "[10.0.2, 10.0.2]"
+          },
+          {
             "name": "Microsoft.Windows.SDK.NET.Ref",
             "version": "[10.0.19041.57, 10.0.19041.57]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+            "version": "[10.0.2, 10.0.2]"
           }
         ],
         "frameworkReferences": {
@@ -36541,10 +36659,10 @@
       "android-arm64": {
         "#import": []
       },
-      "android-x64": {
+      "ios-arm64": {
         "#import": []
       },
-      "iossimulator-x64": {
+      "maccatalyst-arm64": {
         "#import": []
       },
       "maccatalyst-x64": {

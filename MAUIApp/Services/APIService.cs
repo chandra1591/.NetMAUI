@@ -16,7 +16,18 @@ namespace MyMAUIApp.Services
 
         public APIService()
         {
-            _httpClient = new() { BaseAddress = new Uri(BaseAddress) };
+            _httpClient = new() { BaseAddress = new Uri(GetBaseAddress()) }; //BaseAddress
+        }
+
+        // Debug and release get api address 
+        private static string GetBaseAddress()
+        {
+            #if DEBUG
+                 return DeviceInfo.Platform == DevicePlatform.Android ? "http://10.0.2.2:8099" : "http://localhost:8099";
+            #elif RELEASE
+                // Publish address here
+                return "https://carlistApi.com";
+            #endif
         }
 
         public async Task<List<Car>> GetCars()

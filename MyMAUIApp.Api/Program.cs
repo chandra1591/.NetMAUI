@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.IdentityModel.Tokens.Jwt;
+using System.Runtime.InteropServices;
 using System.Security.Claims;
 using System.Text;
 
@@ -99,6 +100,13 @@ namespace MyMAUIApp.Api
                 );
             var app = builder.Build();
 
+            // Create Database
+            using (var scope = app.Services.CreateScope())
+            using (var context = scope.ServiceProvider.GetService<CarListDbContext>())
+            {
+                context.Database.Migrate();
+            }
+           
             // Swagger
             app.UseSwagger();
             app.UseSwaggerUI();

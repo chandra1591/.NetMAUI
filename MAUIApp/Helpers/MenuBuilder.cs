@@ -28,7 +28,7 @@ namespace MyMAUIApp.Helpers
                             Title = "Admin Page 1",
                             Icon = "home.png",
                             ContentTemplate = new DataTemplate(typeof(MainPage))
-                        },
+                        }
                     }
                 }; 
 
