@@ -3236,11 +3236,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\MAUI\\MyMAUIApp.Api\\MyMAUIApp.Api.csproj",
+      "projectUniqueName": "E:\\MAUI\\.NetMAUI\\MyMAUIApp.Api\\MyMAUIApp.Api.csproj",
       "projectName": "MyMAUIApp.Api",
-      "projectPath": "E:\\MAUI\\MyMAUIApp.Api\\MyMAUIApp.Api.csproj",
+      "projectPath": "E:\\MAUI\\.NetMAUI\\MyMAUIApp.Api\\MyMAUIApp.Api.csproj",
       "packagesPath": "C:\\Users\\chand\\.nuget\\packages\\",
-      "outputPath": "E:\\MAUI\\MyMAUIApp.Api\\obj\\",
+      "outputPath": "E:\\MAUI\\.NetMAUI\\MyMAUIApp.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

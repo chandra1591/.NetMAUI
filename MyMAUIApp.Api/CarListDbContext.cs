@@ -4,13 +4,15 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MyMAUIApp.Api
 {
-    public class CarListDbContext : IdentityDbContext //IdentityDbContext<IdentityUser, IdentityRole, string>//DbContext
-    {
-        public CarListDbContext(DbContextOptions<CarListDbContext> options)
-            : base(options)
-        {
-        }
 
+    // Primary Contrsuctor
+    public class CarListDbContext(DbContextOptions<CarListDbContext> options) : IdentityDbContext(options) //IdentityDbContext<IdentityUser, IdentityRole, string>//DbContext
+    {
+
+        //public CarListDbContext(DbContextOptions<CarListDbContext> options)
+        //   : base(options)
+        //{
+        //}
         public DbSet<Car> Cars => Set<Car>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

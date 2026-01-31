@@ -230,10 +230,11 @@ namespace MyMAUIApp.Api
 
                      var tokenClaims = new List<Claim>
                      {
-                         new Claim(JwtRegisteredClaimNames.Sub,user.Id),
-                         new Claim(JwtRegisteredClaimNames.Jti,Guid.NewGuid().ToString()),
-                         new Claim(JwtRegisteredClaimNames.Email,user.Email),
-                         new Claim("email_confirmed",user.EmailConfirmed.ToString()),
+                         new (JwtRegisteredClaimNames.Sub,user.Id),
+                         new (JwtRegisteredClaimNames.Jti,Guid.NewGuid().ToString()),
+                         new (ClaimTypes.Email,user.Email ?? string.Empty),
+                         //new (JwtRegisteredClaimNames.Email,user.Email ?? string.Empty),
+                         new ("email_confirmed",user.EmailConfirmed.ToString()),
 
                      }.Union(claims)
                      .Union(roles.Select(role => new Claim(ClaimTypes.Role, role)));
