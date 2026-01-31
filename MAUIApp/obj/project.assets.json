@@ -35137,11 +35137,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\MAUI\\MyMAUIApp\\MyMAUIApp.csproj",
+      "projectUniqueName": "E:\\MAUI\\.NetMAUI\\MAUIApp\\MyMAUIApp.csproj",
       "projectName": "MyMAUIApp",
-      "projectPath": "E:\\MAUI\\MyMAUIApp\\MyMAUIApp.csproj",
+      "projectPath": "E:\\MAUI\\.NetMAUI\\MAUIApp\\MyMAUIApp.csproj",
       "packagesPath": "C:\\Users\\chand\\.nuget\\packages\\",
-      "outputPath": "E:\\MAUI\\MyMAUIApp\\obj\\",
+      "outputPath": "E:\\MAUI\\.NetMAUI\\MAUIApp\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

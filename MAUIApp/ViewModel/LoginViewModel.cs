@@ -1,10 +1,12 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using MyMAUIApp.Helpers;
 using MyMAUIApp.Models;
 using MyMAUIApp.Services;
 using System.Data;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using System.Text.Json;
 
 namespace MyMAUIApp.ViewModel
 {
@@ -54,18 +56,20 @@ namespace MyMAUIApp.ViewModel
                                                 
                         // build a manu on the fly... based on the user role
                         var jsonToken = new JwtSecurityTokenHandler().ReadJwtToken(resposnse.Token) as JwtSecurityToken;
-                        var role = jsonToken.Claims.FirstOrDefault(q => q.Type.Equals(ClaimTypes.Role))?.Value;
+                        var role = jsonToken.Claims.FirstOrDefault(q => q.Type.Equals(ClaimTypes.Role))?.Value ?? string.Empty;
                         App.CurrentUser = new UserInfo
                         {
                             Username = Username,
                             Role = role
                         };
+                        Preferences.Set(nameof(App.CurrentUser), JsonSerializer.Serialize(App.CurrentUser));
 
-                        if(Preferences.ContainsKey(nameof(UserInfo)))
-                            Preferences.Remove(nameof(UserInfo));
+                        if (Preferences.ContainsKey(nameof(App.CurrentUser)))
+                            Preferences.Remove(nameof(App.CurrentUser));
 
 
                         // Navigate to app's smain page
+                        MenuBuilder.BuildManu();
                         await Shell.Current.GoToAsync($"{nameof(MainPage)}");
 
                     }

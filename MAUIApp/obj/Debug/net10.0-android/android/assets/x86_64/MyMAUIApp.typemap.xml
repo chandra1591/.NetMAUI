@@ -1,4 +1,4 @@
-<api type="debug" assembly-name="MyMAUIApp" mvid="024795a4992c4d3cbf1bfb454aa6e5b3">
+<api type="debug" assembly-name="MyMAUIApp" mvid="4213964e25fa4f1ab252a5c619b76295">
   <java-to-managed>
     <entry java-name="crc64d05620f81d52cd66/MainActivity" managed-name="MyMAUIApp.MainActivity, MyMAUIApp" managed-type-token-id="33554443" />
     <entry java-name="crc64d05620f81d52cd66/MainApplication" managed-name="MyMAUIApp.MainApplication, MyMAUIApp" managed-type-token-id="33554444" />

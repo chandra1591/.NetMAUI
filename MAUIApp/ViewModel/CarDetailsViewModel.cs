@@ -39,7 +39,7 @@ public partial class CarDetailsViewModel : BaseViewModel, IQueryAttributable
         }
         else
         {
-            Car = App.CarService.GetCar(Id);
+            Car = App.CarService!.GetCar(Id);
         }
     }
 }

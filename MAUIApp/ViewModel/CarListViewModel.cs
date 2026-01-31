@@ -57,7 +57,7 @@ namespace MyMAUIApp.ViewModel
         {
             if (string.IsNullOrEmpty(Make) || string.IsNullOrEmpty(Model) || string.IsNullOrEmpty(Vin))
             {
-                await ShowAlert("Invali Data", "Please insert valid data.");
+                await CarListViewModel.ShowAlert("Invali Data", "Please insert valid data.");
                 return;
             }
 
@@ -82,7 +82,7 @@ namespace MyMAUIApp.ViewModel
                 }
                 else
                 {
-                    App.CarService.UpdateCar(car);
+                    App.CarService!.UpdateCar(car);
                     message = App.CarService.StatusMessage;
                 }
 
@@ -96,13 +96,13 @@ namespace MyMAUIApp.ViewModel
                 }
                 else
                 {
-                    App.CarService.AddCar(car);
+                    App.CarService!.AddCar(car);
                     message = App.CarService.StatusMessage;
                 }
 
             }
 
-            await ShowAlert("Info", message);
+            await CarListViewModel.ShowAlert("Info", message);
 
             await GetCarlist();
             await ClearForm();
@@ -113,7 +113,7 @@ namespace MyMAUIApp.ViewModel
         {
             if (Id == 0)
             {
-                await ShowAlert("Invalid Record", "Please try again");
+                await CarListViewModel.ShowAlert("Invalid Record", "Please try again");
                 return;
             }
 
@@ -121,19 +121,19 @@ namespace MyMAUIApp.ViewModel
             {
                 await apiService.DeleteCar(Id);
                 message = apiService.StatusMessage;
-                await ShowAlert("Deletion Info", message);
+                await CarListViewModel.ShowAlert("Deletion Info", message);
                 await GetCarlist();
             }
             else
             {
-                var result = App.CarService.DeleteCar(Id);
+                var result = App.CarService!.DeleteCar(Id);
                 if (result == 0)
                 {
-                    await ShowAlert("Invalid Record", "Please insert valid data.");
+                    await CarListViewModel.ShowAlert("Invalid Record", "Please insert valid data.");
                 }
                 else
                 {
-                    await ShowAlert("Deletion Successfully", "Record remove successfully");
+                    await CarListViewModel.ShowAlert("Deletion Successfully", "Record remove successfully");
                     await GetCarlist();
                 }
             }
@@ -145,7 +145,7 @@ namespace MyMAUIApp.ViewModel
 
             if (string.IsNullOrEmpty(Make) || string.IsNullOrEmpty(Model) || string.IsNullOrEmpty(Vin))
             {
-                await ShowAlert("Invalid Data", "Please Update valid data.");
+                await CarListViewModel.ShowAlert("Invalid Data", "Please Update valid data.");
                 return;
             }
 
@@ -164,11 +164,11 @@ namespace MyMAUIApp.ViewModel
             }
             else
             {
-                App.CarService.UpdateCar(car);
+                App.CarService!.UpdateCar(car);
                 message = App.CarService.StatusMessage;
             }
 
-            await ShowAlert("Info", message);
+            await CarListViewModel.ShowAlert("Info", message);
             await GetCarlist();
         }
 
@@ -187,7 +187,7 @@ namespace MyMAUIApp.ViewModel
                 }
                 else
                 {
-                    cars = App.CarService.GetCars();
+                    cars = App.CarService!.GetCars();
                 }
                 //var cars = carService.GetCars();
                 foreach (var car in cars) Cars.Add(car);
@@ -195,7 +195,7 @@ namespace MyMAUIApp.ViewModel
             catch (Exception ex)
             {
                 Debug.WriteLine($"Unable to get cars : {ex.Message}");
-                await ShowAlert("Error", "Failed to retive list of cars.");
+                await CarListViewModel.ShowAlert("Error", "Failed to retive list of cars.");
             }
             finally
             {
@@ -210,7 +210,7 @@ namespace MyMAUIApp.ViewModel
         {
             if (Id == 0)
             {
-                await ShowAlert("Invalid Record", "Please try again.");
+                await CarListViewModel.ShowAlert("Invalid Record", "Please try again.");
                 return;
             }
 
@@ -268,7 +268,7 @@ namespace MyMAUIApp.ViewModel
             CarId = 0;
         }
 
-        private async Task ShowAlert(string title, string mesage)
+        private static async Task ShowAlert(string title, string mesage)
         {
             await Shell.Current.DisplayAlertAsync(title, mesage, "Ok");
         }

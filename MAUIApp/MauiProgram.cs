@@ -35,12 +35,15 @@ namespace MyMAUIApp
             builder.Services.AddSingleton<CarDetailsViewModel>();
             builder.Services.AddSingleton<LoadingViewModel>();
             builder.Services.AddSingleton<LoginViewModel>();
+            builder.Services.AddSingleton<LogoutViewModel>();
 
             // Pages
             builder.Services.AddSingleton<LoadingPage>();
             builder.Services.AddSingleton<LoginPage>();
             builder.Services.AddSingleton<MainPage>();
             builder.Services.AddSingleton<CarDetailsPage>();
+            builder.Services.AddSingleton<LogoutPage>();
+
 
 #if DEBUG
             builder.Logging.AddDebug();

@@ -5,8 +5,8 @@ namespace MyMAUIApp
 {
     public partial class App : Application
     {
-        public static UserInfo CurrentUser { get; set; }
-        public static CarService CarService { get; private set; }
+        public static UserInfo? CurrentUser { get; set; }
+        public static CarService? CarService { get; private set; }
         public App(CarService carService)
         {
             InitializeComponent();
